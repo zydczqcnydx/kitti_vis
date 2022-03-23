@@ -1,4 +1,4 @@
-# kitti_vis
+# kitti_vis使用
 ## step1 conda 创建环境
 
 ```
@@ -34,3 +34,12 @@ python img_3dbox.py --path_dataset data/object
 #后面为数据集的位置,/为linux文件格式，windows 为\\\即可
 
 运行图片可视化成功后，该文件为对数据集内的图片进行可视化，默认从数据集第一张开始，可以通过a和d来切换图片。
+
+# 工程结构介绍
+1.data文件夹放入的是包括数据集解析的3个类，分别为calib.py,kitti_Dataset.py,object3d.py。他们能够从txt文件中读入我们需要的数据信息。
+
+2.object文件夹内有两个文件夹，其中kitti为官网下载的数据集的部分。training为我们模型训练的结果。
+
+3.可以通过在one_bin_show.py和img_3dbox.py中修改路径来可视化这两个文件夹内的内容.
+
+4.需要注意的是，我们训练的结果中的label中的.txt文件比kitii数据集多了一列置信度。当你要可视化我们的结果时，需要在one_bin_show.py 86行附近进行修改，即可。
