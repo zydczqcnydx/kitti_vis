@@ -21,7 +21,7 @@ pip install opencv-python
 ```
 git clone https://github.com/zydczqcnydx/kitti_vis.git
 ```
-## step3 运行可视化
+## step4 运行可视化
  可视化点云
 ```
 python one_bin_show.py --index 10
