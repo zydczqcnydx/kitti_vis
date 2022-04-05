@@ -43,3 +43,13 @@ python img_3dbox.py --path_dataset data/object
 3.可以通过在one_bin_show.py和img_3dbox.py中修改路径来可视化这两个文件夹内的内容.
 
 4.需要注意的是，我们训练的结果中的label中的.txt文件比kitii数据集多了一列置信度。当你要可视化我们的结果时，需要在one_bin_show.py 86行附近进行修改，即可。
+
+# 同时显示点云和图片
+```
+python final.py --path_dataset data/object
+```
+1.通过运行上述代码，可以通过opencv和open3d对图片和点云同时显示。
+
+2.运行后会弹出opencv和open3d窗口，可通过a,d进行切换，通过q退出，但是要点击opencv窗口才可以，因为切换图片和点云的索引采用的是cv2.waitKey().
+
+**注意：**第一个点云文件被阻塞住了，需要点击右上角的关闭窗口按钮,程序才能在while中执行，这样就可以在opencv框中，通过a,d进行切换，q退出。
