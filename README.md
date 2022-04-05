@@ -44,7 +44,7 @@ python img_3dbox.py --path_dataset data/object
 
 4.需要注意的是，我们训练的结果中的label中的.txt文件比kitii数据集多了一列置信度。当你要可视化我们的结果时，需要在one_bin_show.py 86行附近进行修改，即可。
 
-# 同时显示点云和图片
+## 同时显示点云和图片
 ```
 python final.py --path_dataset data/object
 ```
