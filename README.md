@@ -26,6 +26,7 @@ git clone https://github.com/zydczqcnydx/kitti_vis.git
 ```
 python one_bin_show.py --index 10
 ```
+![image](https://github.com/zydczqcnydx/kitti_vis/blob/main/vis_result_imgs/BEV.png)
  可视化图片
 
 ```
